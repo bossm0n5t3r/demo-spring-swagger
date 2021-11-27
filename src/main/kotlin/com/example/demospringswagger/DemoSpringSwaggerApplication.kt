@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class DemoSpringSwaggerApplication
 
 fun main(args: Array<String>) {
-	runApplication<DemoSpringSwaggerApplication>(*args)
+    runApplication<DemoSpringSwaggerApplication>(*args)
 }
