@@ -6,6 +6,8 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint") version "10.2.0"
     kotlin("jvm") version "1.5.20"
     kotlin("plugin.spring") version "1.5.20"
+    id("com.google.protobuf") version "0.8.18"
+    id("java")
 }
 
 group = "com.example"
@@ -38,4 +40,13 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.google.protobuf:protobuf-gradle-plugin:0.8.18")
+    }
 }
