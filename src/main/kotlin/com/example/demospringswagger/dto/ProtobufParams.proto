@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message ProtobufParams {
+  string paramString = 1;
+  int32 paramInt = 2;
+}
